@@ -11,9 +11,23 @@ namespace A
         public string color;
         public string name;
 
+        private int age;
+
+        public Cat()
+        {
+            this.name = "Garfild";
+            
+        }
+        public Cat( int age )
+        {
+            this.age = Math.Abs(age);
+            Console.WriteLine("Age {0} , {1}", age, this.age);
+        }
+
         public void SayMiau()
         {
-            Console.WriteLine("Miau");
+            string color = "red";
+            Console.WriteLine("Miau. I'm {0} . my name is {1} ", this.color, this.name);
         }
     }
 }
