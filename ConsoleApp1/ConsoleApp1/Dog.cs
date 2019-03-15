@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Dog
+     class Dog
     {
+        //Statini poleta
+        public static int countDog = 0; 
         // Poleta
         private string name;
         private string poroda;
@@ -28,7 +30,13 @@ namespace ConsoleApp1
         public Dog()
         {
             Console.WriteLine( "Hello I'm Dog");
+            Dog.countDog++;
+
             this.age = 1;
+
+            Point p = new Point(1, 2);
+            Console.WriteLine( "Piont " + p.X );
+
         }
         public void SayHello()
         {
@@ -41,5 +49,18 @@ namespace ConsoleApp1
 
             return  (this.age - 1) * 7;
         }
+
+
+       
     }
+
+    //static class Test
+    //{
+    //    public static string Test1()
+    //    {
+
+    //        //Console.WriteLine();
+    //        return "static class";
+    //    }
+    //}
 }
